@@ -1,0 +1,30 @@
+{
+	"name": "saigon/conpago-migrations-di",
+	"description": "Conpago framework migrations dependency injections.",
+	"version": "0.0.1-alpha",
+	"type": "library",
+	"authors": [
+		{
+			"name": "Bartosz Gołek",
+			"email": "bartosz.golek@gmail.com",
+			"homepage": "http://bartosz.golek.biz"
+		}
+	],
+	"require": {
+		"saigon/conpago-di": "dev-default",
+		"saigon/conpago-migrations-contract": "dev-default",
+		"saigon/conpago-migrations": "dev-default"
+	},
+	"require-dev": {
+		"pdepend/pdepend": "*",
+		"phpmd/phpmd": "*",
+		"squizlabs/php_codesniffer": "*",
+		"sebastian/phpcpd": "*",
+		"phpunit/phpunit": "4.*"
+	},
+	"autoload": {
+		"psr-0": {
+			"Saigon\\Conpago\\Migrations\\": "src/"
+		}
+	}
+}
