@@ -6,22 +6,22 @@
 	 * Time: 23:25
 	 */
 
-	namespace Saigon\Conpago\Migrations;
+	namespace Conpago\Migrations;
 
 
-	use Saigon\Conpago\DI\IContainerBuilder;
-	use Saigon\Conpago\DI\IModule;
+	use Conpago\DI\IContainerBuilder;
+	use Conpago\DI\IModule;
 
 	class MigrationsModule implements IModule {
 
 		public function build( IContainerBuilder $builder ) {
 
 			$builder
-				->registerType('Saigon\Conpago\Migrations\MigrateCommand')
-				->asA('Saigon\Conpago\Console\Contract\IMigrateCommand');
+				->registerType('Conpago\Migrations\MigrateCommand')
+				->asA('Conpago\Console\Contract\IMigrateCommand');
 
 			$builder
-				->registerType('Saigon\Conpago\Migrations\Presentation\MigrateCommandPresenter')
-				->asA('Saigon\Conpago\Console\Contract\Presentation\IMigrateCommandPresenter');
+				->registerType('Conpago\Migrations\Presentation\MigrateCommandPresenter')
+				->asA('Conpago\Console\Contract\Presentation\IMigrateCommandPresenter');
 		}
 	}
