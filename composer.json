@@ -11,9 +11,9 @@
 		}
 	],
 	"require": {
-		"conpago/conpago-di": "dev-default",
-		"conpago/conpago-migrations-contract": "dev-default",
-		"conpago/conpago-migrations": "dev-default"
+		"conpago/conpago-di": "dev-master",
+		"conpago/conpago-migrations-contract": "dev-master",
+		"conpago/conpago-migrations": "dev-master"
 	},
 	"require-dev": {
 		"pdepend/pdepend": "*",
